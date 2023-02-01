@@ -6,3 +6,6 @@ def func(string):
         else:
             a = a + i
     return a
+
+
+

@@ -6,6 +6,7 @@ Library    string.py
 
 &{first_test}=
 ${string}    prashanth
+
 *** Test Cases ***
 generate target string
     ${ret}=    func  ${string}

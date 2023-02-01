@@ -15,7 +15,7 @@ ${string}    prashanth
 generate target string
     ${ret}=    func    ${one}    ${two}    ${third}
     Log    ${ret}
-    ${ret}=    generate primes    ${100}
+    ${ret}=    generate_primes    ${100}
     Log    ${ret}
     ${ret}=    func  ${string}
     log    ${ret}
