@@ -1,15 +1,17 @@
 *** Settings ***
-Documentation    multipling three numbers
+Documentation    generate prime numbers
 
 Library    multiply.py
 
 *** Variables ***
-&{first_test}=      first_number=2  second_number=4     third_number=3
+&{first_test}=
 ${one}    1
 ${two}    2
 ${third}    3
 
 *** Test Cases ***
-claculate multipying three numbers
+generate prime numbers
     ${ret}=    func    ${one}    ${two}    ${third}
+    Log    ${ret}
+    ${ret}=    generate primes    ${100}
     Log    ${ret}
