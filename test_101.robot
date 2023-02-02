@@ -1,12 +1,24 @@
-*** Test Cases ***
-TEST_101
-    Log    Sample
-    FOR     ${i}    IN RANGE    1   12
-        Log     ${i}
-    END
+*** Settings ***
+Documentation    creating variable and how to use : 'scalar','list','dictionary'
 
-TEST_102
-    @{list}     create list    11   22  33  44  55  66  77
-    FOR     ${i}        IN    @{list}
-    log    ${i}
-    END
+
+*** Variables ***
+${Scalar}       THis is a scalar variable
+@{list}         one     two     three     four    five
+&{dictionary}       first=one   sec=two     thrid=three
+
+*** Test Cases ***
+
+Excute scalar variable
+#        log    ${scalar}
+#        log    \n I picked ${list}[3] value
+        log to console    \n I picked ${dictionary['first']} value
+        FOR    ${i}     IN    &{dictionary}
+        LOG TO CONSOLE    ${i}
+        END
+
+        FOR    ${key}       IN    &{dictionary}
+             log to console    ${key}
+        END
+
+

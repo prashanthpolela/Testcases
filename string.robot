@@ -10,3 +10,4 @@ ${string}    prashanth
 generate target string
     ${ret}=    func  ${string}
     log    ${ret}
+
