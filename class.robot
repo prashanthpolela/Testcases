@@ -1,14 +1,15 @@
 *** Settings ***
-Documentation    basic class method
+Documentation   It is a basic class method
+Library    EngineeringClass.py      ${department}    ${student}
 
-Library    class.py     ${name}     ${role}
 *** Variables ***
-${name}=        prashanth
-${role}=        software
+${department}     CSE
+${student}         43
+
 *** Test Cases ***
-MyTest
-        ${result}=    ${name}    ${role}
-        log      ${result}
+This is my testcase
+        ${result}   Department Detail
+        log to console    ${result}
 
 
 
