@@ -4,7 +4,7 @@ Documentation    generate target string
 Library    string.py
 *** Variables ***
 
-${string}    prashanth
+${string}     prashanth
 
 *** Test Cases ***
 generate target string

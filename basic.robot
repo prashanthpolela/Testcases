@@ -19,8 +19,8 @@ forloop5
 forloop6
     ${a}   set variable    alumnux
     ${b}   set variable    software
-    ${c}    catenate        ${a}${b}
+    ${c}    catenate        ${a} ${b}
     LOG    ${c}
 
-**
+
 

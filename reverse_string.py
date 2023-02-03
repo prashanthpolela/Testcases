@@ -4,7 +4,7 @@ def fun(string):
         a = i + a
     return a
 
-def reverse(string):
+def  reverse(string):
     a = " "
     for i in string.split(" "):
         a = i + " " + a
