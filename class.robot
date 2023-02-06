@@ -8,8 +8,8 @@ ${student}         43
 
 *** Test Cases ***
 This is my testcase
-        ${result}   Department Detail
-        log to console    ${result}
+        ${result}   department detail
+        log     ${result}
 
 
 
