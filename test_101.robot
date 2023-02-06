@@ -11,9 +11,9 @@ ${Scalar}       This is a scalar variable
 Excute scalar variable
         log    ${scalar}
         log    \n I picked ${list}[3] value
-        log to console    \n I picked ${dictionary['first']} value
+        log    \n I picked ${dictionary['first']} value
         FOR    ${i}     IN    &{dictionary}
-        LOG TO CONSOLE    ${i}
+        LOG     ${i}
         END
 
 

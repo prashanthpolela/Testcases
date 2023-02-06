@@ -11,7 +11,6 @@ To find max_list
         ${result}    file.fun        ${list_file}
         log to console    ${result}
 To find min_list
-        ${output}   mininum     ${file}
+        ${output}   file.minimum     ${file}
         log to console    ${output}
 
-r

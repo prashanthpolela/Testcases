@@ -5,7 +5,8 @@ def fun(list_file):
             m = i
     return m
 
-def mininum(file_list):
+
+def minimum(file_list):
     x = 100
     for i in file_list:
         if i < x:

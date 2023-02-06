@@ -13,6 +13,9 @@ ${string11}     better to leave now
 reverse a string based on condition
         ${test_string}=       fun    ${string}
         log    ${test_string}
+
+reverse a string based on condition
         ${reverse_string}=      reverse    ${string11}
         log    ${reverse_string}
+
 
