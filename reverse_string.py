@@ -35,3 +35,14 @@ def reverse_list(list_):
     for i in range(len(list_)//2):
         list_[i], list_[-i-1] = list_[-i-1], list_[i]
     return list_
+
+def function(string):
+    d = {}
+    for i in string:
+        if i == 'a' or i == 'e' or i == 'i' or i == 'o' or i == 'u':
+            if i in d:
+                d[i] += 1
+            else:
+                d[i] = 1
+    return d
+

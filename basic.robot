@@ -8,6 +8,8 @@ Library    reverse_string.py
 @{list_numbers} =       ${1}   ${2}   ${3}   ${4}   ${5}
 
 @{list_elements}        ${5}    ${2}    ${9}    ${1}
+
+${string}    I am doing well today
 *** Test Cases ***
 To find factorial of a number
         ${output}=      factorial    ${5}
@@ -24,6 +26,10 @@ list of arguments
 reverse a list of elements
         ${reverse_elements}     reverse_string.reverse list    ${list_elements}
         log    ${reverse_elements}
+
+count vowels in a list
+        ${vowels_string}        function    ${string}
+        log    ${vowels_string}
 
 
 
