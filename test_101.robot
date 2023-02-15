@@ -38,7 +38,7 @@ Example
 forloop22
     @{list}     create list    4    5   6   7   8
     FOR    ${i}     IN    ${list}
-    IF      ${i} == 6       CONTINUE
+    IF      ${i} == 6       BREAK
     log to console    ${i}
     END
 
@@ -46,5 +46,7 @@ forloop222
     ${variable}     set variable    prashanth vadla
     log to console    ${variable}
 
-
+forloop333
+    ${variable}     set variable    vishwanth
+    log to console    ${variable}[-1::-2]
 

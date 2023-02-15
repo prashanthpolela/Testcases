@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation    generate target string
 
-Library    multiply.py
+Library         multiply.py
 
 *** Variables ***
 &{first_test}=

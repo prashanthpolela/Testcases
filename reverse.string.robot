@@ -17,5 +17,3 @@ reverse a string based on condition
 reverse a string based on condition
         ${reverse_string}=      reverse    ${string11}
         log    ${reverse_string}
-
-

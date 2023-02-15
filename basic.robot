@@ -5,7 +5,7 @@ Documentation    list of programs
 Library    reverse_string.py
 
 *** Variables ***
-@{list_numbers} =       ${1}   ${2}   ${3}   ${4}   ${5}
+@{list_numbers}       ${1}   ${2}   ${3}   ${4}   ${5}
 
 @{list_elements}        ${5}    ${2}    ${9}    ${1}
 
@@ -31,12 +31,6 @@ count vowels in a list
         ${vowels_string}        function    ${string}
         log    ${vowels_string}
 
-
-
-
-
-
-
 forloop
     &{dictionary}   create dictionary    1=apple    2=orange     3=robot
     FOR    ${i}        IN    &{dictionary}
@@ -53,7 +47,6 @@ forloop222
     FOR    ${i}     IN    @{list}[::-1]
     log to console    ${i}
     END
-
 
 
 forloop6
