@@ -21,12 +21,12 @@ Excute scalar variable
 excute dictionary testcases
     ${nested} =    Evaluate    [['a', 'b', 'c'], {'key': ['x', 'y']}]
     Log     ${nested}[0]
-    Log     ${nested}[1][key]
+    log to console    ${nested}[1][key]
 
 
 Slice
     ${items} =    Create List    first    second    third
-    Log     ${items}[1:]
+    log to console    ${items}[1:]
 
 
 Example
@@ -50,20 +50,19 @@ forloop333
     ${variable}     set variable    vishwanth
     log to console    ${variable}[-1::-2]
 
-*** Test Cases ***
 Nested container
 
     ${nested} =    Evaluate    [['a', 'b', 'c'], {'key': ['x', 'y']}]
-    Log Many    @{nested}[0]         # Logs 'a', 'b' and 'c'.
+    Log Many    @{nested}[0]
     Log Many    @{nested}[1][key]
 
 
 String
     ${string} =    Set Variable    ABCD
-    Log    ${string.lower()}      # Logs 'ABC'
+    log to console    ${string.lower()}
 
 Number
     ${number} =    Set Variable    ${-2}
-    Log    ${number.__abs__()}
+    log to console    ${number.__abs__()}
 
 

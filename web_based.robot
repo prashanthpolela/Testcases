@@ -3,13 +3,13 @@ Library     SeleniumLibrary
 
 
 *** Variables ***
-
+${url}      https://www.nopcommerce.com/en/demo
+${browser}      chrome
 
 *** Test Cases ***
 LoginTest
-    open browser    https://demo.nopcommerce.com/    chrome
+    open browser    ${url}      ${browser}
     maximize browser window
+    close browser
 
-
-*** Keywords ***
  

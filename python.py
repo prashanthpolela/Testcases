@@ -152,21 +152,21 @@
 # print('Avg is:\t', (total_sum/subject_count))
 
 
-# str1 = "P@#yn26at^&i5ve"
-# char_list = []
-# digit_list = []
-# symbol_list = []
-# for i in str1:
-#     if i.isalpha():
-#         char_list.append(i)
-#         chars = len(char_list)
-#     elif i.isdigit():
-#         digit_list.append(i)
-#         digits = len(digit_list)
-#     else:
-#         symbol_list.append(i)
-#         symbols = len(symbol_list)
-# print("Total counts of chars, digits and symbols", "\n")
-# print("Chars =", char_list)
-# print("Digits =", digit_list)
-# print("Symbols =", symbol_list)
+str1 = "P@#yn26at^&i5ve"
+char_list = []
+digit_list = []
+symbol_list = []
+for i in str1:
+    if i.isalpha():
+        char_list.append(i)
+        chars = len(char_list)
+    elif i.isdigit():
+        digit_list.append(i)
+        digits = len(digit_list)
+    else:
+        symbol_list.append(i)
+        symbols = len(symbol_list)
+print("Total counts of chars, digits and symbols", "\n")
+print("Chars =", char_list)
+print("Digits =", digit_list)
+print("Symbols =", symbol_list)

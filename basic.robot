@@ -8,6 +8,7 @@ Library    reverse_string.py
 
 @{list_elements}        ${5}    ${2}    ${9}    ${1}
 
+@{tuple_elements}       ${4}    ${11}   ${12}   ${45}
 
 ${string}    I am doing well today
 *** Test Cases ***
@@ -72,6 +73,5 @@ forloop33
 forloop44
     ${out}      reverse_list    ${list_elements}
     log to console    ${out}
-
 
 
