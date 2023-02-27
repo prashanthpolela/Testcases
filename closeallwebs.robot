@@ -6,7 +6,7 @@ Library    SeleniumLibrary
 Mytestcase
     open browser    https://demowebshop.tricentis.com/register      chrome
     maximize browser window
-
-    open browser    https://demo.nopcommerce.com/       chrome
+    sleep       5
+    go to    https://demo.nopcommerce.com/
     maximize browser window
     close all browsers

@@ -15,7 +15,11 @@ LoginTest
     close browser
 *** Keywords ***
 loginToApplication
+    sleep   2
     click link    xpath:/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[2]/a
+    sleep    3
     input text    id:Email      prashanthvadla5566@gmail.com
+    sleep    2
     input text    id:Password       vish12345
+    sleep    2
     click element    xpath:/html/body/div[6]/div[3]/div/div/div/div[2]/div[1]/div[2]/form/div[3]/button

@@ -11,7 +11,7 @@ ${browser}      chrome
 *** Test Cases ***
 TC1
     ${pageTitle}=    launchbrowser   ${url}      ${browser}
-    log to console    ${pageTitle}                    #userdefined keywords with arguments
+    log to console    ${pageTitle}                    # userdefined keywords with arguments
     input text    name:userName     mercury
     input text    name:password     mercury
 
